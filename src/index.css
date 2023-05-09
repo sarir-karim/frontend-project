@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.subscribe{
+    background: linear-gradient(348.49deg, #0F172A -55.69%, #29274A 91.54%);
+}
+
+.slick-dots li button:before{
+    color : #9C9C9C !important;
+    font-size: 10px !important;
+    border-radius: 50px;
+}
+.slick-active{
+    font-size: 14px !important;
+    border-radius: 50px;
+    background-color: #00CCFF !important;
+}
+
+.slick-prev{
+    left: -3rem;
+    width: 35px !important;
+    height: 30px !important;
+}
+
+.slick-next{
+    right: -3rem;
+    width: 35px !important;
+    height: 30px !important;
+}
+.slick-prev:before{
+    font-size: 25px;
+}
+.slick-next:before{
+    font-size: 25px;
+}
+
+.slick-dots{
+    bottom: -30px;
+}
