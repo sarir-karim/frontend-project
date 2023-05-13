@@ -6,27 +6,23 @@ import img4 from '../../assets/eventImages/event4.png'
 export const data = [
     {
         img: img1,
-        name: "Venues",
-        subhead: "Choose from Our Wide Selection of Event Spaces",
-        para: "At our event marketplace, we understand that finding the perfect venue can make or break your event. That's why we've partnered with top event spaces in the industry."
+        name: "Event Planning",
+        para: "Our skilled event production team will take care of all technical and logistical aspects of your event, including sound, lighting, staging, and AV equipment. We have state-of-the-art equipment and experienced technicians to ensurethat your event runs smoothly and without any glitches."
     },
     {
         img: img2,
-        name: "Catering",
-        subhead: "Select from Our Expertly Curated Catering Partners",
-        para: "Food is an important aspect of any event, and we understand that. Our event marketplace offers a variety of catering options to suit every palate and dietary restriction. "
+        name: "Event Design",
+        para: "Our talented event designers will work with you to create a visually stunning and memorable event design that reflects your personal style and vision. From floral arrangements to lighting and decor. we will create a cohesive and beautiful event design. "
     },
     {
         img: img3,
-        name: "Entertainment",
-        subhead: "Choose from Our Talented and Experienced Performers",
-
-        para: "An event is not complete without entertainment. Our event marketplace offers a wide range of entertainment options to keep your guests engaged and entertained. "
+        name: "Event Production",
+        para: "Our team of experienced event planners will work with you to create a unique and customized event plan to meet your specific needs. We will take care of all aspects of your event planning, including budgeting venue selection, decor, entertainment, catering, and logistics. "
     },
     {
         img: img4,
-        name: "Event Planning Services",
-        subhead: "Planning an event can be a daunting task, but it doesn't have to be. Our event marketplace offers professional event planning services to help take the stress out of planning your event. "
+        name: "Event Coordination",
+        para: "On the day of your event, our event coordinators will be on site to oversee every detail and ensure that everything runs according to plan. We will work with your vendors and suppliers to ensure that everything is set up on time and to your specifications, leaving you free to enjoy your event and make memories. "
     },
     
 ]

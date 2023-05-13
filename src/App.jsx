@@ -15,6 +15,8 @@ import Footer from './components/Footer/Footer'
 import About from './pages/About/About'
 import Services from './pages/Services/Services'
 import Event from './pages/Event/Event'
+import Faqs from './pages/Faqs/Faqs'
+import Dashboard from './dashboard/Dashboard' 
 
 
 const App = () => {
@@ -22,10 +24,12 @@ const App = () => {
     <div >
       <Header/>
         <Routes>
+          {/* page routes */}
             <Route element={  <Home/>} path='/'/>
             <Route element={  <About/>} path='/aboutus'/>
             <Route element={  <Services/>} path='/services'/>
             <Route element={  <Event/>} path='/events'/>
+            <Route element={  <Faqs/>} path='/faqs'/>
             <Route element={  <Signup/>} path='signup'/>
             <Route element={  <Login/>} path='login'/>
             {/* two factor auth routes */}
@@ -37,6 +41,7 @@ const App = () => {
             <Route element={  <ResetCode/>} path='resetcode'/>
             <Route element={  <ResetPassword/>} path='resetpassword'/>
             <Route element={  <ResetSuccess/>} path='resetsuccess'/>
+                <Route path='/dashboard' element={<Dashboard/>}/>
         </Routes>
         <Footer/>
    

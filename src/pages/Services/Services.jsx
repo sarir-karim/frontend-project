@@ -2,17 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { data } from "./data";
 import {FaUserCircle} from 'react-icons/fa'
-import {GrMapLocation} from 'react-icons/gr'
+import {GrMap} from 'react-icons/gr'
 import {RiMoneyDollarCircleFill} from 'react-icons/ri'
 import Subscribe from "../../components/Subscribe/Subscribe";
 const Services = () => {
   return (
     <>
     {/* hero */}
-      <div class="text-center text-gray-800  px-6 flex flex-col justify-center items-center gap-6 bg-[#0F172A] py-14">
-        <h1 class="text-3xl  xl:text-4xl font-semibold text-white w-[50%]">
+      <div className="text-center text-gray-800  px-6 flex flex-col justify-center items-center gap-6 bg-[#0F172A] py-14">
+        <h1 className="text-3xl  xl:text-4xl font-semibold text-white w-[50%]">
           Expert Event Management
-          <span class="text-white text-3xl font-semibold">
+          <span className="text-white text-3xl font-semibold">
             <span className="text-yellow-500 font-semibold"> Services</span> to
             <span className="text-yellow-500 font-semibold">
               {" "}
@@ -43,10 +43,9 @@ const Services = () => {
       {/* SERVIES */}
       <div className=" ">
         <section className="mb-10 text-gray-800 text-center py-10 w-[80%] mx-auto">
-          <h2 className="text-3xl font-extrabold mb-4">Meet our Team</h2>
-          <p className="w-[40%] mx-auto mb-12 text-sm text-[#888888] ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <h2 className="text-4xl font-extrabold mb-3 mt-10">Our Services</h2>
+          <p className="w-[40%] mx-auto mb-5 text-sm text-[#888888] ">
+          We are Offering Following Services. Explore and Make your event better than every one.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-x-6  ">
             {data.map((data, index) => (
@@ -66,7 +65,7 @@ const Services = () => {
             ))}
           </div>
           <Link
-            className="inline-block px-20 py-3 mr-2 bg-[#00CCFF] text-black font-medium text-sm leading-snug  rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mt-20"
+            className="inline-block px-20 py-3 mr-2 bg-[#00CCFF] text-black font-medium text-sm leading-snug  rounded-full shadow-md hover:bg-blue-500 hover:text-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mt-20"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
             href="#!"
@@ -94,7 +93,7 @@ const Services = () => {
 you are planning</span>
           </div>
           <div className="bg-[#0F172A] w-[35%] flex items-center justify-center flex-col gap-3 pt-8 pb-9 text-white rounded-lg">
-         <GrMapLocation className="text-5xl text-[#FAAB00]"/>
+         <GrMap className="text-5xl bg-[#FAAB00] rounded-md"/>
             <span className="font-bold text-2xl mb-2"><span className="text-[#FFCC00]">Your </span> Location</span>
           
             <span className="font-thin text-sm tracking-wide">

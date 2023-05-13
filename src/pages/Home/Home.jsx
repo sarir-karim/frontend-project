@@ -30,10 +30,10 @@ const Home = () => {
     <>
       {/* hero section */}
    <div className=" bg-[#0F172A] py-14">
-   <div class="text-center text-gray-800  px-6 flex flex-col justify-center items-center gap-6 ">
-        <h1 class="text-3xl  xl:text-4xl font-medium text-white">
+   <div className="text-center text-gray-800  px-6 flex flex-col justify-center items-center gap-6 ">
+        <h1 className="text-3xl  xl:text-4xl font-medium text-white">
           The All-in-one Platform design to Help <br />
-          <span class="text-white text-3xl">
+          <span className="text-white text-3xl">
             You create{" "}
             <span className="text-yellow-500">Unforgettable Experiences</span>{" "}
           </span>
@@ -56,27 +56,27 @@ const Home = () => {
       </div>
         <div className="pt-14">
           <Slider {...homeslider} className="w-[1349px] flex justify-center gap-5  ">
-            <div className="w-[50px] h-[300px] border-x-8 border-[#0F172A] relative">
+            <div className="w-[50px] h-[300px] border-x-8 border-[#0F172A] relative bg-[BsFilterRight]">
              <div className="absolute bottom-5  left-20 z-50 text-white">Lorem ipsum dolor sit amet.</div>
              <img src={SliderImg1} alt="" className="w-[100%] h-[100%]" />
              
             </div>
-            <div className="w-[50px] h-[300px] border-x-8 border-[#0F172A] relative">
+            <div className="w-[50px] h-[300px] border-x-8 border-[#0F172A] relative bg-[BsFilterRight]">
              <div className="absolute bottom-5  left-20 z-50 text-white">Lorem ipsum dolor sit amet.</div>
              <img src={SliderImg2} alt="" className="w-[100%] h-[100%]" />
              
             </div>
-            <div className="w-[50px] h-[300px] border-x-8 border-[#0F172A] relative">
+            <div className="w-[50px] h-[300px] border-x-8 border-[#0F172A] relative bg-[BsFilterRight]">
              <div className="absolute bottom-5  left-20 z-50 text-white">Lorem ipsum dolor sit amet.</div>
              <img src={SliderImg3} alt="" className="w-[100%] h-[100%]" />
              
             </div>
-            <div className="w-[50px] h-[300px] border-x-8 border-[#0F172A] relative">
+            <div className="w-[50px] h-[300px] border-x-8 border-[#0F172A] relative bg-[BsFilterRight]">
              <div className="absolute bottom-5  left-20 z-50 text-white">Lorem ipsum dolor sit amet.</div>
              <img src={SliderImg1} alt="" className="w-[100%] h-[100%]" />
              
             </div>
-              <div className="w-[50px] h-[300px] border-x-8 border-[#0F172A] relative">
+              <div className="w-[50px] h-[300px] border-x-8 border-[#0F172A] relative bg-[BsFilterRight]">
               <div className="absolute bottom-5  left-20 z-50 text-white">Lorem ipsum dolor sit amet.</div>
               <img src={SliderImg1} alt=""  className="w-[100%] h-[100%]"/>
               
