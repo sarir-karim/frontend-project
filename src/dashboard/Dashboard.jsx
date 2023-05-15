@@ -14,8 +14,7 @@ const Dashboard = () => {
      <Sidebar/>
     <div className="w-full">
     <Routes>
-      <Route path=""  element={<Home/>}/>
-      
+      <Route path=""  element={<Events/>}/>
      </Routes>
     </div>
      </div>

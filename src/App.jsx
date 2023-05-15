@@ -22,7 +22,7 @@ import Dashboard from './dashboard/Dashboard'
 const App = () => {
   return (
     <div >
-      <Header/>
+      {/* <Header/> */}
         <Routes>
           {/* page routes */}
             <Route element={  <Home/>} path='/'/>
@@ -43,7 +43,7 @@ const App = () => {
             <Route element={  <ResetSuccess/>} path='resetsuccess'/>
                 <Route path='/dashboard' element={<Dashboard/>}/>
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
    
      
     </div>
