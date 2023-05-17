@@ -6,6 +6,7 @@ import { IoMdAnalytics } from "react-icons/io";
 import { FaUsers } from "react-icons/fa";
 import {IoSettingsOutline} from 'react-icons/io5'
 import { Link } from "react-router-dom";
+import { BiLogOut } from "react-icons/bi";
 
 const Sidebar = () => {
   return (
@@ -35,10 +36,10 @@ const Sidebar = () => {
         </button>
         <aside
           id="default-sidebar"
-          className=" w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+          className=" w-64 h-content sicky top-0 flex flex-col items-between px-3 transition-transform -translate-x-full sm:translate-x-0 bg-[#0F172A]"
           aria-label="Sidebar"
         >
-          <div className="h-full px-3 py-4 overflow-y-auto bg-[#0F172A] dark:bg-gray-800 pt-8">
+          <div className="h-full  py-4 overflow-y-auto pt-8">
             <ul className="space-y-2 font-medium">
               <li>
                 <Link
@@ -107,6 +108,23 @@ const Sidebar = () => {
                 </Link>
               </li>
             </ul>
+          </div>
+
+          <div className="flex flex-col gap-4 pb-5">
+          <li>
+                <Link
+                  to="/login"
+                  className="flex items-center p-2 text-[#969BA0] rounded-lg dark:text-[#969BA0]  hover:text-[#FFCC00] dark:hover:bg-gray-700 ml-5"
+                >
+                    <BiLogOut className="text-xl"/>
+                  <span className="ml-5">Logout</span>
+                </Link>
+              </li>
+            
+            <div className="flex flex-col ml-5">
+              <span className="font-bold text-[#969BA0] text-sm">Plaventi Event Dashboard</span>
+              <span className="text-[#969BA0] text-sm">© 2023 All Rights Reserved</span>
+            </div>
           </div>
         </aside>
       </>

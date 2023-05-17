@@ -8,16 +8,16 @@ import Profile from "./pages/Profile";
 const Dashboard = () => {
   return (
     <>
-      <Header />
-      <div className="flex">
-        <Sidebar />
-        <div className="w-full">
-          <Routes>
-            {/* <Route path="" element={<Home />} /> */}
-            <Route path="" element={<Profile />} />
-          </Routes>
-        </div>
-      </div>
+      <Header/>
+     <div className="flex">
+     <Sidebar/>
+    <div className="w-full">
+    <Routes>
+      <Route path=""  element={<Home/>}/>
+      
+     </Routes>
+    </div>
+     </div>
     </>
   );
 };
