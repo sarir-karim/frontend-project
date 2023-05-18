@@ -33,3 +33,7 @@
 .slick-dots{
     bottom: -30px;
 }
+
+.rounded-chart-container path.apexcharts-bar-area {
+    border-radius: 10px; /* Set the border radius to achieve the desired rounded appearance */
+  }

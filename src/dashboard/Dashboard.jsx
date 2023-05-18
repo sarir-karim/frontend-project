@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import Events from './pages/Events'
 import Profile from './pages/Profile'
 import { Route, Routes } from 'react-router-dom'
+import Anayatics from './pages/Anayatics'
+import Tickets from './pages/Tickets'
 
 const Dashboard = () => {
   return (
@@ -14,7 +16,7 @@ const Dashboard = () => {
      <Sidebar/>
     <div className="w-full">
     <Routes>
-      <Route path=""  element={<Events/>}/>
+      <Route path=""  element={<Tickets/>}/>
      </Routes>
     </div>
      </div>

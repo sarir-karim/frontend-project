@@ -107,3 +107,63 @@ export const sideData = [
         button: "Over"
     },
 ]
+
+export const todoData = [
+    {
+        task: "Task1",
+        button: "add task"
+    },
+    {
+        task: "Task2",
+        button: "add task"
+    },
+    {
+        task: "Task3",
+        button: "add task"
+    },
+    {
+        task: "Task4",
+        button: "add task"
+    },
+    {
+        task: "Task5",
+        button: "add task"
+    },
+    {
+        task: "Task6",
+        button: "add task"
+    },
+]
+import { TbTriangleInvertedFilled } from 'react-icons/tb';
+import { BsFillTriangleFill } from 'react-icons/bs';
+
+export const trendingData = [
+  {
+    sum: '#1',
+    title: 'Beautiful Fireworks Shows In The New Year 2020',
+    number: '425',
+    sales: 'sales',
+    // icon: ,
+  },
+  {
+    sum: '#2',
+    title: 'Jakarta Indie Music Festival 2020',
+    number: '341',
+    sales: 'sales',
+    // icon: <TbTriangleInvertedFilled className="text-[#FF2626] mt-3 ml-[-10px] mr-3" />,
+  },
+  {
+    sum: '#3',
+    title: 'Live Choir in Sydney 2020',
+    number: '225',
+    sales: 'sales',
+    // icon: <BsFillTriangleFill className="text-[#00CCFF] mt-3 ml-[-10px] mr-3" />,
+  },
+  {
+    sum: '#4',
+    title: 'Artist Performing Festival In Aus..',
+    number: '127',
+    sales: 'sales',
+    // icon: <TbTriangleInvertedFilled className="text-[#FF2626] mt-3 ml-[-10px] mr-3" />,
+  },
+];
