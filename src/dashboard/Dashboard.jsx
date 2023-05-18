@@ -21,7 +21,7 @@ const Dashboard = () => {
     </div>
      </div>
     </>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;
