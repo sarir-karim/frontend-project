@@ -54,7 +54,7 @@ const HomeBarChart = () => {
         },
         grid: {
             show: false,
-         
+        
         },
         xaxis: {
             show: false,
@@ -91,7 +91,7 @@ const HomeBarChart = () => {
     
   return (
     <div>
-       <div id="chart" style={chartStyle}>
+      <div id="chart" style={chartStyle}>
       <ReactApexChart options={options} series={series} type="bar" height={140} width={140}/>
     </div>
     </div>

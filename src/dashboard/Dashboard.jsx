@@ -7,6 +7,9 @@ import Profile from './pages/Profile'
 import { Route, Routes } from 'react-router-dom'
 import Anayatics from './pages/Anayatics'
 import Tickets from './pages/Tickets'
+import EventDetail from './pages/EventDetail'
+import NotifyGuests from './pages/NotifyGuests'
+import GuestList from './GuestList'
 
 const Dashboard = () => {
   return (
@@ -16,8 +19,14 @@ const Dashboard = () => {
      <Sidebar/>
     <div className="w-full">
     <Routes>
-      <Route path=""  element={<Tickets/>}/>
+      <Route path=""  element={<EventDetail/>}/>
      </Routes>
+    {/* <Routes>
+      <Route path=""  element={<NotifyGuests/>}/>
+     </Routes> */}
+    {/* <Routes>
+      <Route path=""  element={<GuestList/>}/>
+     </Routes> */}
     </div>
      </div>
     </>
