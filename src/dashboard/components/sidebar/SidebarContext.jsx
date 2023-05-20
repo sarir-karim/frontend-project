@@ -1,14 +1,13 @@
-// SidebarContext.js
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect } from 'react';
 
 const SidebarContext = createContext();
 
 export const SidebarProvider = ({ children }) => {
-  const [activePage, setActivePage] = useState("");
+  const [activePage, setActivePage] = useState('');
 
   useEffect(() => {
     return () => {
-      setActivePage("");
+      setActivePage('');
     };
   }, []);
 

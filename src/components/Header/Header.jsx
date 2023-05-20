@@ -89,7 +89,7 @@ const Header = () => {
                 <li>
                   <Link
                     onClick={() => activeBtn("event")}
-                    to="/events"
+                    to="/event"
                     className={`block py-2 pr-4 pl-3  border-b border-gray-100  lg:border-0  lg:p-0  text-white text-sm ${
                       active === "event" ? "font-medium" : ""
                     } `}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState } from "react";
 import img1 from "../assets/eventImages/img1.png";
 import { HiUsers } from "react-icons/hi";
 import { BsBoxArrowUpRight, BsThreeDotsVertical } from "react-icons/bs";
@@ -6,8 +6,6 @@ import { FaDollarSign } from "react-icons/fa";
 import { BsCalendar2Date } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
 import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
-import img2 from "../assets/eventImages/img2.png";
-import img3 from "../assets/eventImages/img3.png";
 import { todoData } from "./data/hdata";
 import { AiFillDelete } from "react-icons/ai";
 import HomePieSmallChart from "./charts/HomeChart/homePieSmallChart";
@@ -20,12 +18,15 @@ const Events = () => {
   const [isShowMore, setIsShowMore] = useState(false);
   const [isShowTable, setIsShowTable] = useState(false);
 
+;
+
   const toggleReadMoreLess = () => {
     setIsShowMore(!isShowMore);
   };
   const toggleIsShowTable = () => {
     setIsShowTable(!isShowTable);
   };
+
 
 
 

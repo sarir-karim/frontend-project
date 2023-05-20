@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState } from "react";
 import { Link } from "react-router-dom";
 import { CiMenuKebab } from "react-icons/ci";
 import { IoLogoUsd } from "react-icons/io";
@@ -6,7 +6,8 @@ import { AiOutlineCalendar } from "react-icons/ai";
 import { IoTicket } from "react-icons/io5";
 import { BiTimeFive } from "react-icons/bi";
 import { hdata } from "./data/hdata";
-import {sideData} from './data/hdata'
+import { sideData } from "./data/hdata";
+
 const Home = () => {
   const [activeButton, setActiveButton] = useState("login");
   const toggleButton = (button) => {
@@ -72,7 +73,6 @@ const Home = () => {
               </Link>
             </div>
             <CiMenuKebab className="text-2xl mr-3 cursor-pointer" />
-
           </div>
 
           {/* card compoennt */}
@@ -128,17 +128,17 @@ const Home = () => {
                 ))}
               </div>
             </div>
-          <div className="flex justify-end pb-4">
-          <Link
-          className="inline-block px-14 py-3 mr-2 bg-[#00CCFF] text-black font-medium text-sm leading-snug  rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"
-          data-mdb-ripple="true"
-          data-mdb-ripple-color="light"
-          href="#!"
-          role="button"
-        >
-          View Event
-        </Link>
-          </div>
+            <div className="flex justify-end pb-4">
+              <Link
+                className="inline-block px-14 py-3 mr-2 bg-[#00CCFF] text-black font-medium text-sm leading-snug  rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+                href="#!"
+                role="button"
+              >
+                View Event
+              </Link>
+            </div>
           </section>
         </div>
         <div className="w-[23%] bg-white mt-9 rounded-xl pt-7 px-3">
@@ -148,32 +148,33 @@ const Home = () => {
               <span className="text-xs">Filter</span>
             </div>
             <select className="select select-bordered bg-[#EDF2FF] w-[5.9rem]  rounded-[20px] pl-1.5 focus:outline-none pb-[0] pt-[0] ">
-              <option  selected value="Newest">
-              Newest
+              <option selected value="Newest">
+                Newest
               </option>
               <option value="Older">Older</option>
             </select>
           </div>
 
           {/* Event Cards */}
-        {sideData.map((sdata,index)=>(
+          {sideData.map((sdata, index) => (
             <div className="pt-5 border-b pb-3" key={index}>
-            <div className="text-md font-medium">{sdata.Event}</div>
-            <div className="flex items-end justify-between">
-              <div className="flex gap-2 mt-3 items-center">
-                <div className="rounded-full">
-                  <img src={sdata.img} alt="" />
+              <div className="text-md font-medium">{sdata.Event}</div>
+              <div className="flex items-end justify-between">
+                <div className="flex gap-2 mt-3 items-center">
+                  <div className="rounded-full">
+                    <img src={sdata.img} alt="" />
+                  </div>
+                  <div className="flex flex-col">
+                    <div className="text-sm">{sdata.Name}</div>
+                    <div className="text-xs">{sdata.timeline}</div>
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <div className="text-sm">{sdata.Name}</div>
-                  <div className="text-xs">{sdata.timeline}</div>
-                </div>
+                <button className="btn btn-sm text-sm lowercase hover:text-white bg-[#EDF2FF] text-black outline-none border-none rounded-full">
+                  {sdata.button}
+                </button>
               </div>
-              <button className="btn btn-sm text-sm lowercase hover:text-white bg-[#EDF2FF] text-black outline-none border-none rounded-full">{sdata.button}</button>
             </div>
-          </div>
-        ))}
-         
+          ))}
         </div>
       </div>
     </div>
