@@ -37,3 +37,16 @@
 .rounded-chart-container path.apexcharts-bar-area {
     border-radius: 10px; /* Set the border radius to achieve the desired rounded appearance */
   }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    width: 0.5em; /* Adjust the width as needed */
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  

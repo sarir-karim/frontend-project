@@ -139,7 +139,7 @@ const Sidebar = () => {
               </div>
             </div>
           </aside>
-          <div className="w-[82%] bg-red-500">
+          <div className="w-[81%]">
             <Outlet/>
           </div>
         </div>

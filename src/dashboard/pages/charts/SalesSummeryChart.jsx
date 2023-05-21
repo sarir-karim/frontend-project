@@ -44,7 +44,7 @@ const SalesSummeryChart = () => {
 
   return (
     <div id="chart">
-      <ReactApexChart options={options} series={series} type="polarArea" width={250} height={280} />
+      <ReactApexChart options={options} series={series} type="polarArea" width={240} height={280} />
      
     </div>
   );

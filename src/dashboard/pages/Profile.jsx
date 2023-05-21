@@ -2,12 +2,14 @@ import React from "react";
 
 const Profile = () => {
   return (
-    <section className="p-6">
-      <div className="flex justify-between items-center w-full">
-        <h3 className="text-[32px] font-normal semibold">Hi Good Morning</h3>
-        <h3 className="text-2xl font-normal">Sunday, 9 April 2023, 10:43PM</h3>
+    <section className="bg-[#F4F6FA] px-5">
+    <div className="flex justify-between items-center pt-5 ">
+        <span className="text-md  ">Hi! Good Morning</span>
+        <span className="text-md font-medium ">
+          Sunday, 9 April 2024, 10:24PM
+        </span>
       </div>
-      <h1 className=" pt-4 pb-6 text-4xl font-semibold ">My Profile</h1>
+      <h1 className=" pt-4 pb-6 text-3xl font-semibold ">My Profile</h1>
       <form className="flex flex-col gap-8">
         <div className="flex justify-between">
           <input
@@ -72,10 +74,10 @@ const Profile = () => {
           />
         </div>
         <div className="flex justify-end gap-6">
-          <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-sm bg-transparent text-[#0F172A] hover:bg-[#00CCFF] hover:border-[#00CCFF] w-[430px] pt-4 pb-7 rounded-[38px]">
+          <button className="btn btn-xs  bg-transparent text-[#0F172A] hover:bg-[#00CCFF] hover:border-[#00CCFF] w-[230px] pt-4 pb-7 rounded-[38px]">
             Download Information
           </button>
-          <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-sm bg-[#00CCFF] text-[#0F172A] border-[#00CCFF] hover:bg-transparent w-[430px] pt-4 pb-7 rounded-[38px]">
+          <button className="btn btn-xs  bg-[#00CCFF] text-[#0F172A] border-[#00CCFF] hover:bg-transparent w-[230px] pt-4 pb-7 rounded-[38px]">
             Update
           </button>
         </div>

@@ -3,10 +3,10 @@ import React from "react";
 const EventDetail = () => {
   return (
     <div className="bg-[#F4F6FA] px-7 w-[100%]">
-      <div className="flex justify-between px-5 ">
-        <div className="bg-white mt-9 w-[100%] rounded-xl pl-5 ">
+      <div className="flex justify-between  ">
+        <div className="bg-white mt-9 w-[100%] rounded-xl  px-5 ">
           {/* card compoennt */}
-          <div className="flex justify-between items-center pt-5 ">
+          <div className="flex justify-between items-center pt-5  pb-3 ">
             <span className="text-2xl font-semibold  ">Event Details</span>
             <span className="text-md font-medium ">
               Sunday, 9 April 2024, 10:24PM
@@ -66,7 +66,7 @@ const EventDetail = () => {
               >
                 <input
                   type="text"
-                  className="peer block min-h-[auto]  rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-900"
+                  className="peer block min-h-[auto]  rounded border bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-900"
                   id="form2"
                 />
                 <label
@@ -84,7 +84,7 @@ const EventDetail = () => {
               >
                 <input
                   type="text"
-                  className="peer block min-h-[auto]  rounded border-2 bg-transparent px-3 py-[0.35rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-600"
+                  className="peer block min-h-[auto]  rounded border bg-transparent px-3 py-[0.35rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-600"
                   id="form2"
                 />
                 <label
@@ -98,7 +98,7 @@ const EventDetail = () => {
               <div className="relative mb-3" data-te-input-wrapper-init="">
                 <input
                   type="search"
-                  className="peer block min-h-[auto] w-[43.5rem] rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-black-900 dark:peer-focus:text-black [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-600"
+                  className="peer block min-h-[auto] w-[258%] rounded border bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-black-900 dark:peer-focus:text-black [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-600"
                   id="exampleSearch2"
                   placeholder="Type query"
                 />
@@ -121,7 +121,7 @@ const EventDetail = () => {
             <textarea
               id="message"
               rows={4}
-              className="block p-2.5 w-[72.4rem] text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 h-[70vh]"
+              className="block p-2.5 w-[100%] text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 h-[70vh]"
               placeholder="Write your thoughts here..."
               defaultValue={""}
             />

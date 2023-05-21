@@ -4,17 +4,17 @@ export default function GuestList() {
   return (
     <div>
       <div className="bg-[#F4F6FA] px-7">
+        <div className="flex justify-between items-center pt-5 ">
+          <span className="text-xl font-medium ">Hii Good Morning</span>
+          <span className="text-md font-medium ">
+            Sunday, 9 April 2024, 10:24PM
+          </span>
+        </div>
+        <div className="text-3xl font-semibold mt-3">Create Guest List</div>
         <div className="flex justify-between ">
-          <div className="bg-white mt-9 w-full rounded-xl px-5 ">
+          <div className=" mt-4 w-full rounded-xl px-5 ">
             {/* card compoennt */}
-            <div className="flex justify-between items-center pt-5 ">
-              <span className="text-2xl font-semibold  ">
-                Create Guest List
-              </span>
-              <span className="text-md font-medium ">
-                Sunday, 9 April 2024, 10:24PM
-              </span>
-            </div>
+
             <form action="" className="flex gap-9 mt-5 w-[100%]">
               <>
                 <>
@@ -26,15 +26,15 @@ export default function GuestList() {
                     <input
                       type="text"
                       id="small-input"
-                      className="block w-full p-2 text-black-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 bg-transparent w-[20rem] py-[12px] "
-                      placeholder="NAME"
+                      className="block  bg-white p-2 text-black-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 bg-transparent w-[20rem] py-[12px] "
+                      placeholder="Name"
                     />
                   </div>
                 </>
 
                 <select
                   id="countries"
-                  className="bg-white py-[8px] border border-white-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[30rem] p-2.5  "
+                  className="bg-white py-[5px] border border-white-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[30%] p-2.5  "
                 >
                   <option selected="">EVENT TYPE</option>
                   <option value="US">United States</option>
@@ -63,14 +63,14 @@ export default function GuestList() {
                   datepicker=""
                   datepicker-orientation="bottom right"
                   type="text"
-                  className="bg-white border border-black-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 w-[19rem]  py-[12px] "
+                  className="bg-white border border-black-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  pl-10 p-2.5 w-[143%]  py-[12px] "
                   placeholder="DD/MM/YEAR"
                 />
               </div>
             </form>
 
             <form2 className="info ">
-              <div className="info mt-8 gap-6 flex">
+              <div className="info mt-6 gap-6 flex">
                 <div
                   className="relative"
                   id="timepicker-inline-12"
@@ -78,7 +78,7 @@ export default function GuestList() {
                 >
                   <input
                     type="text"
-                    className="peer block min-h-[auto]  rounded border-2 bg-transparent px-3 py-[0.52rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-900"
+                    className="peer block min-h-[auto]  rounded border  px-3 py-[0.52rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-900"
                     id="form2"
                   />
                   <label
@@ -96,7 +96,7 @@ export default function GuestList() {
                 >
                   <input
                     type="text"
-                    className="peer block min-h-[auto]  rounded border-2 bg-transparent px-3 py-[0.52rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-600"
+                    className="peer block min-h-[auto]  rounded border  px-3 py-[0.52rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-600"
                     id="form2"
                   />
                   <label
@@ -110,7 +110,7 @@ export default function GuestList() {
                 <div className="relative mb-3" data-te-input-wrapper-init="">
                   <input
                     type="search"
-                    className="peer block min-h-[auto] w-[45rem] rounded border-2 bg-transparent px-3 py-[0.52rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-black-900 dark:peer-focus:text-black [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-600"
+                    className="peer block min-h-[auto] w-[258%] rounded border px-3 py-[0.52rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-black-900 dark:peer-focus:text-black [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-600"
                     id="exampleSearch2"
                     placeholder="Type query"
                   />
@@ -123,17 +123,11 @@ export default function GuestList() {
                 </div>
               </div>
             </form2>
-            <div className="">
-              <label
-                htmlFor="message"
-                className="block mb-2 text-sm font-medium text-black-900 dark:text-white"
-              >
-                Your message
-              </label>
+            <div className="mt-3">
               <textarea
                 id="message"
                 rows={4}
-                className="block p-2.5 w-[100%] text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500  h-[70vh]"
+                className="block p-2.5 w-[100%] outline-none text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500  h-[70vh]"
                 placeholder="Write your thoughts here..."
                 defaultValue={""}
               />

@@ -167,3 +167,69 @@ export const trendingData = [
     // icon: <TbTriangleInvertedFilled className="text-[#FF2626] mt-3 ml-[-10px] mr-3" />,
   },
 ];
+
+export const ticketData = [
+    {
+        ticketId: "#0012451",
+        date:"21/11/2017",
+        customerName: "Bella Simatupang",
+        ticketOrdered: "The Powerfull Concert Festival London 2020",
+        location: "The Powerfull Concert Festival London 2020",
+        lastOrder: "04/08/2020 12:34 AM",
+        amount: "$623,55"
+    },
+    {
+        ticketId: "#0012451",
+        date:"21/11/2017",
+        customerName: "Bella Simatupang",
+        ticketOrdered: "The Powerfull Concert Festival London 2020",
+        location: "The Powerfull Concert Festival London 2020",
+        lastOrder: "04/08/2020 12:34 AM",
+        amount: "$623,55"
+    },
+    {
+        ticketId: "#0012451",
+        date:"21/11/2017",
+        customerName: "Bella Simatupang",
+        ticketOrdered: "The Powerfull Concert Festival London 2020",
+        location: "The Powerfull Concert Festival London 2020",
+        lastOrder: "04/08/2020 12:34 AM",
+        amount: "$623,55"
+    },
+    {
+        ticketId: "#0012451",
+        date:"21/11/2017",
+        customerName: "Bella Simatupang",
+        ticketOrdered: "The Powerfull Concert Festival London 2020",
+        location: "The Powerfull Concert Festival London 2020",
+        lastOrder: "04/08/2020 12:34 AM",
+        amount: "$623,55"
+    },
+    {
+        ticketId: "#0012451",
+        date:"21/11/2017",
+        customerName: "Bella Simatupang",
+        ticketOrdered: "The Powerfull Concert Festival London 2020",
+        location: "The Powerfull Concert Festival London 2020",
+        lastOrder: "04/08/2020 12:34 AM",
+        amount: "$623,55"
+    },
+    {
+        ticketId: "#0012451",
+        date:"21/11/2017",
+        customerName: "Bella Simatupang",
+        ticketOrdered: "The Powerfull Concert Festival London 2020",
+        location: "The Powerfull Concert Festival London 2020",
+        lastOrder: "04/08/2020 12:34 AM",
+        amount: "$623,55"
+    },
+    {
+        ticketId: "#0012451",
+        date:"21/11/2017",
+        customerName: "Bella Simatupang",
+        ticketOrdered: "The Powerfull Concert Festival London 2020",
+        location: "The Powerfull Concert Festival London 2020",
+        lastOrder: "04/08/2020 12:34 AM",
+        amount: "$623,55"
+    },
+]
