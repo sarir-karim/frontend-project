@@ -12,17 +12,14 @@ export default function GuestList() {
         </div>
         <div className="text-3xl font-semibold mt-3">Create Guest List</div>
         <div className="flex justify-between ">
-          <div className=" mt-4 w-full rounded-xl px-5 ">
+          <div className=" mt-4 w-full rounded-xl  ">
             {/* card compoennt */}
 
             <form action="" className="flex gap-9 mt-5 w-[100%]">
               <>
                 <>
                   <div className="flex items-center">
-                    <label
-                      htmlFor="small-input"
-                      className="block mb-2 text-sm font-medium text-gray-900 "
-                    ></label>
+                   
                     <input
                       type="text"
                       id="small-input"
@@ -63,7 +60,7 @@ export default function GuestList() {
                   datepicker=""
                   datepicker-orientation="bottom right"
                   type="text"
-                  className="bg-white border border-black-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  pl-10 p-2.5 w-[143%]  py-[12px] "
+                  className="bg-white border border-black-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  pl-10 p-2.5 w-[153%]  py-[12px] "
                   placeholder="DD/MM/YEAR"
                 />
               </div>
@@ -110,7 +107,7 @@ export default function GuestList() {
                 <div className="relative mb-3" data-te-input-wrapper-init="">
                   <input
                     type="search"
-                    className="peer block min-h-[auto] w-[258%] rounded border px-3 py-[0.52rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-black-900 dark:peer-focus:text-black [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-600"
+                    className="peer block min-h-[auto] w-[274%] rounded border px-3 py-[0.52rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-black-900 dark:peer-focus:text-black [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white-600"
                     id="exampleSearch2"
                     placeholder="Type query"
                   />
