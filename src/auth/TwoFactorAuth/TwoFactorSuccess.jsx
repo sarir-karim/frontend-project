@@ -3,11 +3,13 @@ import logo from "../../assets/logo.png";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { MdVerified } from "react-icons/md";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const TwoFactorSuccess = () => {
   return (
     <>
-      {/* Hello world */}
+      <Header />
       <section className="h-screen">
         <div className="h-screen">
           {/* Left column container with background*/}
@@ -48,6 +50,7 @@ const TwoFactorSuccess = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

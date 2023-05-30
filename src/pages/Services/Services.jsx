@@ -5,10 +5,13 @@ import {FaUserCircle} from 'react-icons/fa'
 import {GrMap} from 'react-icons/gr'
 import {RiMoneyDollarCircleFill} from 'react-icons/ri'
 import Subscribe from "../../components/Subscribe/Subscribe";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 const Services = () => {
   return (
     <>
     {/* hero */}
+    <Header/>
       <div className="text-center text-gray-800  px-6 flex flex-col justify-center items-center gap-6 bg-[#0F172A] py-14">
         <h1 className="text-3xl  xl:text-4xl font-semibold text-white w-[50%]">
           Expert Event Management
@@ -115,6 +118,7 @@ conduct event
       {/* Subscribe */}
 
       <Subscribe className="mt-[-20px]"/>
+      <Footer/>
     </>
   );
 };

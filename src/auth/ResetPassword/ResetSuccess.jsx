@@ -3,11 +3,13 @@ import logo from "../../assets/logo.png";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { MdVerified } from "react-icons/md";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const ResetSuccess = () => {
   return (
     <>
-      {/* Hello world */}
+      <Header />
       <section className="h-screen">
         <div className="h-screen">
           {/* Left column container with background*/}
@@ -25,32 +27,30 @@ const ResetSuccess = () => {
               <form className="w-[65%] shadow-lg rounded-3xl p-6 ml-[18%] bg-[#FBFCFC] mt-[25%]">
                 <div className="flex justify-center items-center flex-col">
                   <p className="mb-0 mr-4 text-3xl font-medium">
-                  Reset Password
+                    Reset Password
                   </p>
 
                   <MdVerified className="text-4xl text-[#34A853;] mt-14" />
                   <div className="text-2xl font-bold text-[#34A853] mt-3">
-                  Password Reset Successfuly
+                    Password Reset Successfuly
                   </div>
-                  <span className="text-sm mt-2">
-                  Sign In Your Account.
-                  </span>
+                  <span className="text-sm mt-2">Sign In Your Account.</span>
 
-                <Link to="/login">
-                
-                  <button
-                    type="submit"
-                    className="mt-10 mb-[0.125rem] block pr-[2rem] pl-[2rem] pt-[0.5rem] pb-[0.5rem] font-semibold bg-[#00CCFF] rounded-lg"
-                  >
-                    Go to Sign in
-                  </button>
-                </Link>
+                  <Link to="/login">
+                    <button
+                      type="submit"
+                      className="mt-10 mb-[0.125rem] block pr-[2rem] pl-[2rem] pt-[0.5rem] pb-[0.5rem] font-semibold bg-[#00CCFF] rounded-lg"
+                    >
+                      Go to Sign in
+                    </button>
+                  </Link>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

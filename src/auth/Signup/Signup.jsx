@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { TbLogout } from "react-icons/tb";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const Signup = () => {
   const [activeButton, setActiveButton] = useState("signup");
@@ -14,6 +16,7 @@ const Signup = () => {
   };
   return (
     <>
+      <Header />
       <section className="h-screen">
         <div className="h-screen">
           {/* Left column container with background*/}
@@ -60,7 +63,9 @@ const Signup = () => {
                   </p>
                   <div className="flex gap-3 mt-4 text-sm">
                     <span>Already have an account?</span>
-                    <Link to="/login" className="underline">Signin</Link>
+                    <Link to="/login" className="underline">
+                      Signin
+                    </Link>
                   </div>
                   {/* Facebook */}
                 </div>
@@ -143,15 +148,15 @@ const Signup = () => {
                   </label>
                   {/* age */}
                   <select
-                        id="countries"
-                        class="bg-white border mt-5  text-sm rounded-lg focus:ring-blue-500 block w-[100%] p-[8px] pr-8 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white  dark:focus:border-blue-500 outline-none text-neutral-500"
-                      >
-                        <option selected>Age</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                      </select>
+                    id="countries"
+                    class="bg-white border mt-5  text-sm rounded-lg focus:ring-blue-500 block w-[100%] p-[8px] pr-8 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white  dark:focus:border-blue-500 outline-none text-neutral-500"
+                  >
+                    <option selected>Age</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                  </select>
 
                   {/* mobile and country */}
 
@@ -239,6 +244,7 @@ const Signup = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

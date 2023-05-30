@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const countryData = [
   { name: "USA", code: "+1" },
@@ -34,7 +36,7 @@ const TwoFactorAuth = () => {
   };
   return (
     <>
-      {/* Hello world */}
+    <Header/>
       <section className="h-screen">
         <div className="h-screen">
           {/* Left column container with background*/}
@@ -106,6 +108,7 @@ const TwoFactorAuth = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

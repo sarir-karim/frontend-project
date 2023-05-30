@@ -3,6 +3,8 @@ import logo from "../../assets/logo.png";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const VerificationCode = () => {
   const navigate = useNavigate()
@@ -58,6 +60,7 @@ const VerificationCode = () => {
   return (
     <>
       {/* Hello world */}
+      <Header/>
       <section className="h-screen">
         <div className="h-screen">
           {/* Left column container with background*/}
@@ -144,6 +147,7 @@ const VerificationCode = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

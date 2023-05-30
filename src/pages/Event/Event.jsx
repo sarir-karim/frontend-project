@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { data } from "./data";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import { BsFilterRight } from "react-icons/bs";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const Event = () => {
   return (
     <>
+    <Header/>
       {/* hero section */}
       <div className="text-center text-gray-800  px-6 flex flex-col justify-center items-center gap-6 bg-[#0F172A] py-14">
         <h1 className="text-3xl xl:text-4xl font-semibold text-white w-[50%]">
@@ -135,6 +138,7 @@ const Event = () => {
       {/* subscribe */}
 
       <Subscribe />
+      <Footer/>
     </>
   );
 };

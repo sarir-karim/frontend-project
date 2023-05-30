@@ -3,9 +3,11 @@ import logo from "../../assets/logo.png";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const ResetCode = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [verificationCode, setVerificationCode] = useState([
     "",
     "",
@@ -16,7 +18,7 @@ const ResetCode = () => {
   ]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const code = verificationCode.join("");
@@ -25,7 +27,7 @@ const ResetCode = () => {
     setTimeout(() => {
       if (code === "123456") {
         // alert("Verification successful!");
-        navigate('/twofactorsucess')
+        navigate("/twofactorsucess");
       } else {
         setErrorMessage("Invalid verification code");
         setIsSubmitting(false);
@@ -57,7 +59,7 @@ const ResetCode = () => {
 
   return (
     <>
-      {/* Hello world */}
+      <Header />
       <section className="h-screen">
         <div className="h-screen">
           {/* Left column container with background*/}
@@ -79,10 +81,10 @@ const ResetCode = () => {
                 {/*Sign in section*/}
                 <div className="flex flex-col items-start justify-center lg:justify-start">
                   <p className="mb-0 mr-4 text-2xl font-medium">
-                  Reset Password
+                    Reset Password
                   </p>
                   <div className="mt-3 text-sm">
-                  Enter 6-Digit Code to Reset Code
+                    Enter 6-Digit Code to Reset Code
                   </div>
                 </div>
 
@@ -113,37 +115,44 @@ const ResetCode = () => {
                 </div>
 
                 {errorMessage && (
-                  <div className="text-red-500 mb-4 ml-1 text-sm">{errorMessage}</div>
+                  <div className="text-red-500 mb-4 ml-1 text-sm">
+                    {errorMessage}
+                  </div>
                 )}
                 {/* resend button */}
-                <div type="button" onClick={handleResendCode} className="underline text-center cursor-pointer mt-5 text-sm font-semibold">Resend Code</div>
+                <div
+                  type="button"
+                  onClick={handleResendCode}
+                  className="underline text-center cursor-pointer mt-5 text-sm font-semibold"
+                >
+                  Resend Code
+                </div>
 
                 {/* buttons */}
 
                 <div className="mb-4 flex items-center mt-6 gap-4 ml-36">
                   <Link to="/resetpassword">
-                  <button className="mb-[0.125rem] block pr-[2rem] pl-[2rem] pt-[0.5rem] pb-[0.5rem] font-semibold bg-white border border-black rounded-lg">
-                    Cancel
-                  </button>
+                    <button className="mb-[0.125rem] block pr-[2rem] pl-[2rem] pt-[0.5rem] pb-[0.5rem] font-semibold bg-white border border-black rounded-lg">
+                      Cancel
+                    </button>
                   </Link>
-                  
+
                   <Link to="/newpassword">
-                  
-                  <button
-                    type="submit"
-                    disabled={!verificationCode.every((digit) => digit)}
-                    className="mb-[0.125rem] block pr-[2rem] pl-[2rem] pt-[0.5rem] pb-[0.5rem] font-semibold bg-[#00CCFF] rounded-lg cursor-pointer"
-                  >
-                    {isSubmitting ? "Verifying..." : "Verify"}
-                  </button>
+                    <button
+                      type="submit"
+                      disabled={!verificationCode.every((digit) => digit)}
+                      className="mb-[0.125rem] block pr-[2rem] pl-[2rem] pt-[0.5rem] pb-[0.5rem] font-semibold bg-[#00CCFF] rounded-lg cursor-pointer"
+                    >
+                      {isSubmitting ? "Verifying..." : "Verify"}
+                    </button>
                   </Link>
-                  
                 </div>
               </form>
             </div>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

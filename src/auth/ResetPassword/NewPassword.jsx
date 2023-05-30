@@ -3,6 +3,8 @@ import logo from "../../assets/logo.png";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const NewPassword = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -24,6 +26,7 @@ const NewPassword = () => {
   return (
     <>
       {/* Hello world */}
+      <Header/>
       <section className="h-screen">
         <div className="h-screen">
           {/* Left column container with background*/}
@@ -152,6 +155,7 @@ const NewPassword = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

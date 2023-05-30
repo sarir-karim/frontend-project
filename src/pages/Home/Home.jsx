@@ -9,6 +9,8 @@ import client1 from "../../assets/homeImages/client1.png";
 import SliderImg1 from "../../assets/homeImages/slider1.png";
 import SliderImg2 from "../../assets/homeImages/slider2.png";
 import SliderImg3 from "../../assets/homeImages/slider3.png";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   const settings = {
@@ -29,6 +31,7 @@ const Home = () => {
   return (
     <>
       {/* hero section */}
+      <Header/>
    <div className=" bg-[#0F172A] py-14">
    <div className="text-center text-gray-800  px-6 flex flex-col justify-center items-center gap-6 ">
         <h1 className="text-3xl  xl:text-4xl font-medium text-white">
@@ -364,6 +367,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

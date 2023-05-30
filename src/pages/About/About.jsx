@@ -6,10 +6,13 @@ import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import Subscribe from "../../components/Subscribe/Subscribe";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const About = () => {
   return (
     <>
+    <Header/>
       <div className="bg-[#0F172A] py-16 bg-[#0F172A] py-14 text-center text-gray-800  px-6 flex flex-col justify-center items-center gap-6 ">
         <h1 className="text-3xl  xl:text-4xl font-medium text-white">
           <span className="text-yellow-500">About</span> Us
@@ -313,6 +316,7 @@ const About = () => {
 
       {/* subscribe */}
       <Subscribe/>
+      <Footer/>
     </>
   );
 };

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const ResetPassword = () => {
   const [email, setEmail] = useState("");
@@ -25,7 +27,6 @@ const ResetPassword = () => {
         setIsSubmitting(false);
       }
     }, 2000);
-    
   };
 
   const isValidEmail = (value) => {
@@ -49,7 +50,7 @@ const ResetPassword = () => {
 
   return (
     <>
-      {/* Hello world */}
+      <Header />
       <section className="h-screen">
         <div className="h-screen">
           {/* Left column container with background*/}
@@ -71,12 +72,10 @@ const ResetPassword = () => {
                 {/*Sign in section*/}
                 <div className="flex flex-col items-start justify-center lg:justify-start">
                   <p className="mb-0 mr-4 text-2xl font-medium">
-                  Reset Password
+                    Reset Password
                   </p>
                   <div className="mt-3 text-sm">
-                    <span>
-                    Enter Email to Reset Password....!
-                    </span>
+                    <span>Enter Email to Reset Password....!</span>
                   </div>
                 </div>
 
@@ -95,9 +94,8 @@ const ResetPassword = () => {
                       onBlur={handleBlur}
                       className={`peer  block min-h-[auto] w-full rounded-lg   px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 border ${
                         errorMessage ? "border-red-500" : ""
-                      }` }
+                      }`}
                       placeholder="Email address"
-                      
                     />
                     <label
                       htmlFor="exampleFormControlInput2"
@@ -117,27 +115,32 @@ const ResetPassword = () => {
                 )}
 
                 <div className="mb-6 flex items-center mt-9 gap-4 ml-24">
-                 <Link to="/login">
-                 <button className="mb-[0.125rem] block pr-[2rem] pl-[2rem] pt-[0.5rem] pb-[0.5rem] font-semibold bg-white border border-black rounded-lg">
-                    Cancel
-                  </button>
-                 </Link>
+                  <Link to="/login">
+                    <button className="mb-[0.125rem] block pr-[2rem] pl-[2rem] pt-[0.5rem] pb-[0.5rem] font-semibold bg-white border border-black rounded-lg">
+                      Cancel
+                    </button>
+                  </Link>
                   <Link to="/resetcode">
-                  <button type="submit" className="mb-[0.125rem] block pr-[2rem] pl-[2rem] pt-[0.5rem] pb-[0.5rem] font-semibold bg-[#00CCFF] rounded-lg cursor-pointer"  disabled={!isValidEmail(email) || isSubmitting}>
-                  {isSubmitting ? "Sending..." : "Send Code"}
-                  </button>
+                    <button
+                      type="submit"
+                      className="mb-[0.125rem] block pr-[2rem] pl-[2rem] pt-[0.5rem] pb-[0.5rem] font-semibold bg-[#00CCFF] rounded-lg cursor-pointer"
+                      disabled={!isValidEmail(email) || isSubmitting}
+                    >
+                      {isSubmitting ? "Sending..." : "Send Code"}
+                    </button>
                   </Link>
                 </div>
 
-              <div className="text-sm mt-8 text-center">
-              The easy way to keep <span className="font-semibold">Account Safe.</span> 
-              </div>
+                <div className="text-sm mt-8 text-center">
+                  The easy way to keep{" "}
+                  <span className="font-semibold">Account Safe.</span>
+                </div>
               </form>
-
             </div>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

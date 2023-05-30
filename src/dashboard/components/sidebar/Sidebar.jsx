@@ -5,7 +5,7 @@ import { HiOutlineTicket, HiOutlineUser } from "react-icons/hi";
 import { IoMdAnalytics } from "react-icons/io";
 import { FaUsers } from "react-icons/fa";
 import { IoSettingsOutline } from "react-icons/io5";
-import { Link, NavLink,Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import { BiLogOut } from "react-icons/bi";
 
 const Sidebar = () => {
@@ -44,7 +44,7 @@ const Sidebar = () => {
               <ul className="space-y-2 font-medium">
                 <li>
                   <NavLink
-                    to="/dashboard/home"
+                    to="/dashboard/"
                     className={`flex items-center p-2 text-[#969BA0] rounded-lg dark:text-[#969BA0]  hover:text-[#FFCC00] dark:hover:bg-gray-700 ml-5`}
                   >
                     <RiDashboardFill className="text-xl" />
@@ -57,7 +57,9 @@ const Sidebar = () => {
                     className={`flex items-center p-2 text-[#969BA0] rounded-lg dark:text-[#969BA0]  hover:text-[#FFCC00] dark:hover:bg-gray-700 ml-5`}
                   >
                     <FiCalendar className="text-xl" />
-                    <span className="flex-1 ml-5 whitespace-nowrap">Events</span>
+                    <span className="flex-1 ml-5 whitespace-nowrap">
+                      Events
+                    </span>
                   </NavLink>
                 </li>
                 <li>
@@ -140,7 +142,7 @@ const Sidebar = () => {
             </div>
           </aside>
           <div className="w-[81%]">
-            <Outlet/>
+            <Outlet />
           </div>
         </div>
       </>

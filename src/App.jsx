@@ -34,7 +34,6 @@ import DashSettings from './dashboard/pages/Settings'
 const App = () => {
   return (
     <div>
-      {/* <Header/> */}
       <Routes>
         {/* page routes */}
         <Route element={<Home />} path="/" />
@@ -55,7 +54,7 @@ const App = () => {
         <Route element={<ResetSuccess />} path="resetsuccess" />
         {/* dashboard routes */}
         <Route path="/dashboard" element={<Dashboard />} >
-            <Route path="/dashboard/home" element={<DashHome/>}/>
+            <Route path="/dashboard/" element={<DashHome/>}/>
             <Route path="/dashboard/events" element={<DashEvents/>}/>
             <Route path="/dashboard/eventdetail" element={<DashEventDetail/>}/>
             <Route path="/dashboard/notifyguest" element={<DashNotifyGuests/>}/>
@@ -67,7 +66,6 @@ const App = () => {
             <Route path="/dashboard/settings" element={<DashSettings/>}/>
         </Route>
       </Routes>
-      {/* <Footer/> */}
     </div>
   );
 };

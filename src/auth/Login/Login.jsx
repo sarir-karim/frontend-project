@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import {TbLogout} from 'react-icons/tb'
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const Login = () => {
   const [activeButton, setActiveButton] = useState("login");
@@ -14,7 +16,7 @@ const Login = () => {
   };
   return (
     <>
-      {/* Hello world */}
+    <Header/>
       <section className="h-screen">
         <div className="h-screen">
           {/* Left column container with background*/}
@@ -102,9 +104,9 @@ const Login = () => {
                   {/*Forgot password link*/}
                   <Link to="/resetpassword">Forgot password?</Link>
                   {/* Remember me checkbox */}
-                  <button className="mb-[0.125rem] block pr-[1.8rem] pl-[1.8rem] pt-[0.4rem] pb-[0.4rem] bg-[#00CCFF] rounded-lg">
+                  <Link className="mb-[0.125rem] block pr-[1.8rem] pl-[1.8rem] pt-[0.4rem] pb-[0.4rem] bg-[#00CCFF] rounded-lg" to="/dashboard">
                     Signin
-                  </button>
+                  </Link>
                 </div>
                 <div class="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
                   <p class="mx-4 mb-0 text-center font-semibold dark:text-white">
@@ -147,6 +149,7 @@ const Login = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };
